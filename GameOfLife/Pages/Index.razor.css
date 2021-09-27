@@ -1,0 +1,20 @@
+﻿
+.ColMargin {
+    margin: 5px;
+}
+
+.GridInput {
+    max-width: 45px !important;
+    min-width: 30px;
+    text-align: right;
+}
+
+.ContentRight {
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.ContentLeft {
+    margin-right: auto;
+    margin-left: 0;
+}

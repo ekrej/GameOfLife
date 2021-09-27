@@ -1,0 +1,39 @@
+﻿@page "/"
+@using GameOfLife.Code
+
+<h1>Game of life</h1>
+<div class="container">
+    <div class="row">
+        <div class="col-1 ColMargin">
+            <label>Rows: </label>
+            <br/><input class="GridInput" type="number" value="20" @bind="Rows"/>
+        </div>
+
+        <div class="col-1 ColMargin">
+            <label>Columns: </label>
+            <br/><input class="GridInput" type="number" value="20" @bind="Columns"/>
+        </div>
+
+        <div class="col-2 ContentRight">
+            <button class="btn btn-primary">Randomize</button>
+        </div>
+
+        <div class="col-2 ">
+            <button class="btn btn-primary">
+                <i class="oi oi-media-play"></i> Run
+            </button>
+        </div>
+
+    </div>
+</div>
+
+@code {
+    public int Rows { get; set; }
+    public int Columns { get; set; }
+    
+    public bool Running { get; set; }
+    
+    public Status[,] Grid { get; set; }
+    
+
+}
